@@ -1,19 +1,15 @@
-@import 'CSS/button.css';
-
-
 .navbar{
   background-color:#afbcd8;
   overflow:hidden;
   height:50px;
-    
+
 }
 
 .navbar a{
   float:left;
   display:block;
-  color:#000;
+  color:white;
   text-align:center;
-
   text-decoration:none;
   font-size:17px;
 }
@@ -31,8 +27,6 @@
     font-size: 30px;
     text-align: center;
 }
-
-
 
 .side-nav{
   width:0;
@@ -107,14 +101,17 @@ h1{
 	font-size:15px;
 }
 footer{
-  display: none;
-  
+  background-color:#42f1f4;
+  padding-top: 10px;
+  color:white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
 #close_button{
-    display: none; 
+    display: none;
 }
-
 
 .nav_ul {
   display: flex;
@@ -141,18 +138,24 @@ ul>li>a {
 .display_on-mobile{
   display: none !important;
 }
+ a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    color: initial;
+}
 
 /*mobile mode*/
 
 @media (min-width: 320px) and (max-width: 768px) {
-    .navbar{
-        width: 7vw;
-    }
-  
+  .navbar{
+    width: 7vw;
+  }
+
   .logo_cdu {
     height: 64px;
   }
- 
+
   .nav_brand {
     display: flex;
     flex-direction: row;
@@ -163,15 +166,16 @@ ul>li>a {
   .primary_navigation {
     display: none;
   }
+
   .secondary_navigation{
-    background-color: #FFFFFF;
+    opacity:1;
+    background-color: black;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 160px;
     right: 0;
     margin: 0 auto;
     padding-top: 4px;
-    color: #000000;
   }
 
   .button_close{
@@ -217,13 +221,33 @@ ul>li>a {
   .sub_nav li > a{
       text-decoration: none;}
     #close_button {
-        
-        background-color: #5f75e2;
-        color: #ffff;
-        cursor: pointer;
+      background-color: #5f75e2;
+      color: #ffff;
+      cursor: pointer;
 }
-    
-        
-    
+
 }
+
+.button{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.button_menu{
+  float: right;
+  width: 64px;
+  height: 30px;
+  color: #fff;
+ background-color: #20639B;
+}
+
+.button_primary{
+  width: 112px;
+}
+
+.button_primary:hover{
+  background-color: #2D2D2D;
 }
