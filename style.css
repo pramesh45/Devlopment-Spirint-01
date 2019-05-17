@@ -120,6 +120,9 @@
         border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+h1{
+	font-size:15px;
+}
 footer{
   background-color: #72726e;
   padding-top: 10px;
