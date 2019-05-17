@@ -8,15 +8,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body a link="white" vlink="white">
-  <div class="box">
-      <input class="input-box" type="text" name="Search" placeholder="Search">
- </div>
+  
    <img src="image/cdu.gif" alt="logo">
 
 <br>
   <nav class="navbar">
     <span class="open-slide">
-      <a href="#" onclick="openSlideMenu()">
+        <a href="#" onclick="openSlideMenu()">
         <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
             <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
@@ -25,17 +23,26 @@
       </a>
     </span>
 
-    <ul class="navbar-nav">
-      <li><a href = "">CDU Home</a></li>
-      <li><a href = "">Courses Faculties & Schools </a></li>
-      <li><a href = "">Learning & Teaching </a></li>
-      <li><a href = "">Library <a/></li>
-      <li><a href = "">Campuses & Centres </a></li>
-      <li><a href = "">Sitemap </a></li>
-      <li><a href = "">Learnline Login </a></li>
-    </ul>
+      <div class="secondary_navigation hidden" id="secondary_nav">
+               <ul class="listeditemsup nav_ul">
+                    <li><a class="button button_menu button_close display_on-mobile" id="close_button">Close</a> </li>
+                    <li class="mt_2"><a href="#">CDU Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Learning and Teaching</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Course faculties and Schools</a></li>
+                    <li><a href="#">Campus and centres</a></li>
+                    <li><a href="#" class="button button_primary btn_learnline" id="listeditemsCommon"><i class="fas fa-book-reader"></i>Learnline</a></li>
+          </ul>
+      </div>
   </nav>
-
+    <nav class="navigation">
+  <div>
+    <a href="#" class="button button_menu display_on-mobile" id="menu_button"><i class="menu_icon fas fa-bars"></i>Menu</a>
+  </div>
+  
+</nav>
+    
   <div id="side-menu" class="side-nav">
     <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
     <a href="#">Academic Assignment</a>
@@ -49,6 +56,12 @@
     <a href="#">Manage your Studies</a>
     <a href="#">Videos and Interactives</a>
   </div>
+    <h1 id="heading">Academic Writing</h1>
+    
+    
+        
+    
+    
   <div id="box">
     <div class="card">
       <div class="image">
@@ -62,6 +75,7 @@
       <a href=""><button>Learn More...</button></a>
       </div>
     </div>
+
 
     <div class="card">
       <div class="image">
